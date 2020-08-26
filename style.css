@@ -18,8 +18,24 @@
   color: #ffffff;
 }
 
+@media (max-width: 600px) {
+.main-body{
+  padding-left: 10px !important;
+  padding-right:10px !important;
+}
+.container-timeline{
+  padding-left: 10px !important;
+  }
+  .blog-paragraph{
+  width: 300px;
+}
+.blogs-section{
+  width: 150px !important;
+}
+}
+
 .right {
-  position: absolute;
+  /* position: absolute; */
   right: 0px;
   width: auto;
   /* border: 3px solid #73AD21; */
@@ -138,7 +154,7 @@
 
 /* Preloader css */
   #loader {
-  position: absolute;
+  /* position: absolute; */
   left: 50%;
   top: 50%;
   z-index: 1;
@@ -166,7 +182,7 @@
 
 /* Add animation to "page content" */
 .animate-bottom {
-  position: relative;
+  /* position: relative; */
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
@@ -192,11 +208,17 @@
 /* Tweaks in skill section */
 #skills ul{
   /* flex-wrap: wrap; */
-  display:flex;
+  /* display:flex; */
+  width: auto;
 }
 
 #skills li{
   padding-right:100px;
+}
+@media (max-width: 600px) {
+ #skills li{
+  padding-right:7px;
+  }
 }
 /* blogs section */
 .blogs-section{
@@ -228,6 +250,52 @@
 
 
 /* projects styling */
+
+
+@media (max-width: 600px) {
+
+.blogs-section img{
+  height: 200px;
+  width: auto;
+}
+.blogs-section h2{
+  font-size: 25px;
+}
+.blog-paragraph{
+  width: 350px;
+}
+.slide{
+  height: auto;
+  width: 200px !important;
+}
+
+
+.slider-section{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.slider {
+  width: 300px;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+  
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.project-paragraph{
+  padding: 50px;
+  height: auto;
+  width: auto;
+}
+
+}
+
 .projects-ribbon{
   margin-left: auto;
   margin-right: auto
@@ -304,7 +372,7 @@ text-align: center;
 }
 ul.timeline {
     list-style-type: none;
-    position: relative;
+    /* position: relative; */
 }
 ul.timeline:before {
     content: ' ';
@@ -333,5 +401,7 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 }
+
+
 
 /* timline scene styling ends */

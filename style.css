@@ -32,7 +32,20 @@
 .blogs-section{
   width: 150px !important;
 }
+.div-for-spacing-projects {
+	padding:25px !important;
 }
+.slider{
+width:350px !important;
+}
+}
+
+.div-for-spacing-projects {
+	padding-top:400px;
+	padding-left:400px;
+	padding-right:400px;
+}
+
 
 .right {
   /* position: absolute; */
@@ -112,6 +125,7 @@
 .body-class{
   background-color: #fbe0c3;
   color:#100c0d;
+  width:max-width;
 }
 
 .list-item{
@@ -403,5 +417,10 @@ ul.timeline > li:before {
 }
 
 
+
+#job-experience{
+margin-top:75px;
+}
+	
 
 /* timline scene styling ends */
